@@ -1,0 +1,41 @@
+Content
+ - 리소스 자동 로딩, 리소스(에셋)의 본인의 경로를 키값으로 지정
+ 
+TreeUI
+ - 동일한 이름의 노드가 허용되지 않음 --> 노드 이름 뒤에 ## + ID 를 붙여줌
+ - 경로 형태의 이름을 다르게 표시해주는 기능 부재
+ - Drag Drop 기능 추가
+
+복사생성자 관련 테스트 필요
+
+Level Status 추가에 따른 고려할 부분
+ - Play, Stop, Pause 상태
+ - Object 생성 시, 레벨의 상태가 Play 인 경우 Begin 함수 호출
+ - Material 동적 재질 생성, Camera 컴포넌트 Priority 설정
+ - RenderComponent 복사생성 시 동적재질 복사 문제
+
+Level State 가 추가되면서 구현할 내용
+ - EditorCamera 와 인게임 카메라 분류
+ - EditorCamera 는 Level 외부에서 Level 을 관찰하는 카메라
+ - 레벨이 Play 상태로 전환되면, 카메라 시점을 EditorCam 에서 Level 안에 있는 MainCamera(Priority : 0)
+
+Level Save / Load
+
+Prefab 에셋
+ - 저장 불러오기
+
+에디터 모드에서 Content 로딩 자동화
+
+Sound
+ - FMOD
+
+
+
+
+ 
+
+
+
+
+
+

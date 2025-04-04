@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/DirectX53/.vs
+/DirectX53/Project/Client/x64
+/DirectX53/Project/Engine/x64
